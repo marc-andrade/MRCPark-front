@@ -8,6 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Importe FormsModule e ReactiveFormsModule se ainda não tiver feito isso
+import { MatInputModule } from '@angular/material/input'; // Importe o MatInputModule
+import { MatFormFieldModule } from '@angular/material/form-field'; // Importe o MatFormFieldModule
 
 
 @NgModule({
@@ -20,7 +23,11 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

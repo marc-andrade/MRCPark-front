@@ -1,0 +1,39 @@
+/* Estilo para o contêiner do cartão */
+.card {
+    margin: 20px;
+  }
+  
+  /* Estilo para o título do cartão */
+  .mat-card-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Estilo para o formulário dentro do cartão */
+  mat-form-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para os campos de entrada */
+  input.mat-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para o botão */
+  button.mat-raised-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.mat-raised-button:hover {
+    background-color: #0056b3;
+  }
+  
