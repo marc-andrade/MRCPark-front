@@ -34,6 +34,7 @@ export class VeiculoListComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
       this.dataSource.paginator = this.paginator;
     })
+    console.log(this.ELEMENT_DATA)
   }
 
   applyFilter(event: Event) {

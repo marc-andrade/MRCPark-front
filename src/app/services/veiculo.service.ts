@@ -13,22 +13,22 @@ export class VehicleService {
 
   findById(id:any): Observable<Vehicle>{
     console.log(id)
-    return this.http.get<Vehicle>(`${API_CONFIG.baseUrl}/vehicles/${id}`);
+    return this.http.get<Vehicle>(`${API_CONFIG.baseUrl}/veiculos/${id}`);
   }
 
   findAll(): Observable<Vehicle[]> {
-    return this.http.get<Vehicle[]>(`${API_CONFIG.baseUrl}/vehicles`);
+    return this.http.get<Vehicle[]>(`${API_CONFIG.baseUrl}/veiculos`);
   }
 
   create(vehicle: Vehicle): Observable<Vehicle> {
-    return this.http.post<Vehicle>(`${API_CONFIG.baseUrl}/vehicles`, vehicle);
+    return this.http.post<Vehicle>(`${API_CONFIG.baseUrl}/veiculos`, vehicle);
   }
 
   update(vehicle: Vehicle): Observable<Vehicle> {
-    return this.http.put<Vehicle>(`${API_CONFIG.baseUrl}/vehicles/${vehicle.id}`, vehicle);
+    return this.http.put<Vehicle>(`${API_CONFIG.baseUrl}/veiculos/${vehicle.id}`, vehicle);
   }
 
   delete(id: any): Observable<Vehicle>{
-    return this.http.delete<Vehicle>(`${API_CONFIG.baseUrl}/vehicles/${id}`);
+    return this.http.delete<Vehicle>(`${API_CONFIG.baseUrl}/veiculos/${id}`);
   }
 }
