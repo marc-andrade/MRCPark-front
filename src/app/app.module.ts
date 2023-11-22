@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { VeiculoListComponent } from './components/veiculo/veiculo-list/veiculo-list/veiculo-list.component';
 import { VeiculoUpdateComponent } from './components/veiculo/veiculo-update/veiculo-update/veiculo-update.component';
@@ -36,7 +39,9 @@ import { VeiculoUpdateComponent } from './components/veiculo/veiculo-update/veic
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

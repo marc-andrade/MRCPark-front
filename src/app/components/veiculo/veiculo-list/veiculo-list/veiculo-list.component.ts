@@ -7,15 +7,14 @@ import { VehicleService } from 'src/app/services/veiculo.service';
 @Component({
   selector: 'app-veiculo-list',
   templateUrl: './veiculo-list.component.html',
-  styleUrls: ['./veiculo-list.component.css']
+  styleUrls: ['./veiculo-list.component.css'],
 })
 export class VeiculoListComponent implements OnInit {
 
   ELEMENT_DATA: Vehicle[] = [];
 
-  displayedColumns: string[] = ['id', 'nome','weight','size','price',
-  'category','acoes'];
-  dataSource = new MatTableDataSource<Vehicle>(this.ELEMENT_DATA);
+  displayedColumns: string[] = ['id', 'marca','modelo','placa','cor'];
+  dataSource = new MatTableDataSource<Vehicle>();
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
